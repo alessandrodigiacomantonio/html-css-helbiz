@@ -179,14 +179,15 @@ html {
   section.sezione_banners {
     height: 500px;
     text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://www.helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg");
     color: white;
   }
   .sezione_banners .hr_banner {
     height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg");
+    margin-bottom: 40px;
   }
   .sezione_banners .hr_banner_txt {
     position: relative;
@@ -196,28 +197,49 @@ html {
     top: 50%;
     transform: translateY(-50%);
   }
-  .sezione_banners .hr_banner_txt_content > * {
+  .sezione_banners .hr_banner_txt .banner_txt_content > * {
     width: 60%;
   }
-  .hr_banner_txt_content > h2 {
+  .banner_txt_content > h2 {
     font-size: 3em;
     margin: 0 auto;
   }
-  .sezione_banners .hr_banner_txt_content > p {
+  .sezione_banners .banner_txt_content > p,
+  .sezione_banners .banner_txt_content > div {
     font-size: 1.3rem;
     margin: 1.5em auto;
   }
-  .sezione_banners .hr_banner_txt_content a {
+  .sezione_banners .banner_txt_content a {
     color: #fff;
     text-decoration: none;
   }
-  .sezione_banners .hr_banner_txt_content a:hover span {
+  .sezione_banners .banner_txt_content a:hover span {
     text-decoration: underline;
   }
-  .sezione_banners .hr_banner_txt_content span {
+  .sezione_banners .banner_txt_content span {
     margin-right: 10px;
   }
 
+  .sezione_banners .vr_banner_left {
+    background: url("https://www.helbiz.com/asset/pages/newhome/images/HelbiZAPP.png"), linear-gradient(#41566a,#252f38) 50%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 400px, 100%;
+    height: 500px;
+    /* margin-right: 20px; */
+  }
+  .sezione_banners .vr_banner_left h2,
+  .sezione_banners .vr_banner_right h2{
+    margin-top: 40px;
+  }
+  .sezione_banners .vr_banner_right {
+    background: url("https://www.helbiz.com/asset/pages/newhome/images/Cities-1500.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    /* margin-left: 20px; */
+  }
 }
 
 /* visualizzazione con medium display  */
