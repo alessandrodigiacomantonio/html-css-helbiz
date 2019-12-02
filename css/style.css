@@ -256,4 +256,17 @@ html {
   }
   .sezione_sotto_jumbotron .col-offset-lg-1 {
     margin-top: calc((100% / 24) * 1.5);
+  }
+
+  .sezione_smart_phone_content .how {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .sezione_smart_phone_content .step {
+    float: none;
+  }
+  .sezione_smart_phone_content .step h4 {
+    margin-top: 0;
+  }
 }
