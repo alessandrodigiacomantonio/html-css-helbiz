@@ -1,28 +1,28 @@
 html {
-  font-size: 10px;
-}
-body {
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
-  background-color: red;
+
 }
 
 .container_1000 {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1070px;
   margin: 0 auto;
+}
+.container {
+  width: 90%;
 }
 .menu_inline {
   list-style: none;
 }
 .menu_inline li {
   display: inline;
-  margin-right: 20px;
   text-transform: uppercase;
 }
 .menu_inline li a {
   text-decoration: none;
   color: black;
-  font-size: 1.1em;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -35,24 +35,35 @@ header {
   left: 0;
   z-index: 3;
   width: 100%;
-  line-height: 80px;
+  line-height: 70px;
   background-color: white;
 }
 .header_logo {
   vertical-align: middle;
+  transform: scale(0.7);
 }
-.header_menu li{
-  text-align: left;
-  margin-right: 25px;
+
+.header_menu  {
+  float: right;
 }
-.header_menu_lang li:not(:last-child) {
+.header_menu li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header_menu_lang  {
+  float: right;
+}
+.header_menu_lang li {
   border-right: 1px solid black;
-  padding-right: 20px;
+  padding: 0 10px;
+}
+.header_menu_lang li:last-child {
+  border-right: none;
 }
 .ico_hamburger {
   float: right;
-  font-size: 3.7em;
-  line-height: 80px;
+  font-size: 3.7rem;
+  line-height: 70px;
   vertical-align: middle;
 }
 
@@ -64,29 +75,35 @@ header {
 }
 
 .jumbo {
-  position: relative;
-  height: 400px;
-  margin-top: 80px;
+  height: 600px;
+  margin-top: 70px;
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-position: center;
+}
+.jumbo .container_1000 {
+  position: relative;
+  height: 100%;
 }
 .jumbo_text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 95%;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
   color: white;
 }
 .jumbo_text h1 {
-  font-size: 4em;
-  margin-bottom: 0.8rem;
+  font-size: 4rem;
 }
 .jumbo_text p {
-  font-size: 1.5em;
-  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+}
+.jumbo_text img:first-child {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -122,11 +139,10 @@ header {
     padding: 0 2%;
   }
   .jumbo_text h1 {
-    font-size: 3.5em;
-    margin-bottom: 0.8rem;
+    font-size: 3.5rem;
   }
   .jumbo_text p {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 0.8rem;
   }
   .jumbo_text a {

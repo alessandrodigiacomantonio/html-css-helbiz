@@ -8,7 +8,7 @@
 }
 .debug .container [class*="col-"] {
   border: 1px solid blue;
-  height: 300px;
+  /* height: 300px; */
 }
 .debug-noheight .container [class*="col-"] {
   border: 1px solid blue;
@@ -124,7 +124,7 @@
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
   .col-md-1 {
     width: calc((100% / 12) * 1);
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
   .col-offset-md-1 {
     margin-left: calc((100% / 12) * 1);
   }
