@@ -152,24 +152,25 @@ html {
     background-image: url(../img/HelbizBanner.jpg);
   }
 
-  .sezione_smart_phone_content {
-    height: 200px;
+  .sezione_smart_phone_content .iphone {
+    height: 150px;
+  }
+  .sezione_smart_phone_content .iphone {
+    text-align: center;
   }
   .sezione_smart_phone_content h2 {
-    margin-top: 40px;
     float: right;
     width: 40%;
+    margin-right:40px;
   }
   .sezione_smart_phone_content img {
-    width: 100%;
+    width: 50%;
     transform: translateY(-82%);
   }
   .sezione_smart_phone_content img:first-child {
     transform: translateY(-100%);
   }
-  .sezione_smart_phone_content h4 {
-    margin-top: 40px;
-  }
+
 }
 
 /* visualizzazione con medium display  */
@@ -193,10 +194,34 @@ html {
   .sezione_sotto_jumbotron .col-lg-5 {
     padding: 0px;
   }
-  .sezione_smart_phone_content h4 {
-    float: none;
-    margin-top: 40px;
+  .iphone {
+    height: 350px;
   }
+  .how,
+  .step {
+    text-align: left;
+    margin: 0 0 0 5%;
+  }
+  .how {
+    margin-top: 250px;
+  }
+  .how h2 {
+    display: block;
+    float: none;
+    font-size: 2em;
+  }
+  .step > * {
+    margin-top: 20px;
+  }
+  .step h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .step p {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
 }
 
 /* visualizzazione con small display  */
