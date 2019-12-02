@@ -263,8 +263,12 @@ html {
     margin-bottom: 20px;
     width: 100%;
   }
+  .sezione_smart_phone_content .how h2 {
+    width: 100%;
+  }
   .sezione_smart_phone_content .step {
     float: none;
+    width: 100%;
   }
   .sezione_smart_phone_content .step h4 {
     margin-top: 0;
