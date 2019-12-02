@@ -106,8 +106,10 @@ html {
     margin-left: 1rem;
   }
   /* /intestazione */
+
+  /* principale */
   section {
-    margin: 40px auto;
+    margin: 50px auto;
   }
   .sezione_sotto_jumbotron {
     text-align: center;
@@ -120,13 +122,13 @@ html {
   .sezione_sotto_jumbotron .col-offset-lg-1 {
     margin-left: calc((100% / 24) * 1.5);
   }
-  .sezione_sotto_jumbotron .col-lg-5 > *{
+  .sezione_sotto_jumbotron .col-lg-5 > * {
     width: 100%;
   }
-  .sezione_sotto_jumbotron .col-lg-5 > img{
+  .sezione_sotto_jumbotron .col-lg-5 > img {
     width: 50%;
   }
-  .sezione_sotto_jumbotron .col-lg-5 > p{
+  .sezione_sotto_jumbotron .col-lg-5 > p {
     font-size: 1.3rem;
     margin: 1.5em auto;
   }
@@ -134,15 +136,43 @@ html {
     color: #0070c8;
     text-decoration: none;
   }
-  .sezione_sotto_jumbotron .col-lg-5 a:hover span{
+  .sezione_sotto_jumbotron .col-lg-5 a:hover span {
     text-decoration: underline;
   }
   .sezione_sotto_jumbotron .col-lg-5 span {
     margin-right: 10px;
   }
+
+  .sezione_smart_phone_background {
+    /* position: relative; */
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/HelbizBanner.jpg);
+  }
+
+  .sezione_smart_phone_content {
+    height: 200px;
+  }
+  .sezione_smart_phone_content h2 {
+    margin-top: 40px;
+    float: right;
+    width: 40%;
+  }
+  .sezione_smart_phone_content img {
+    width: 100%;
+    transform: translateY(-82%);
+  }
+  .sezione_smart_phone_content img:first-child {
+    transform: translateY(-100%);
+  }
+  .sezione_smart_phone_content h4 {
+    margin-top: 40px;
+  }
 }
 
-/* visualizzazione  con medium display  */
+/* visualizzazione con medium display  */
 @media screen and (max-width: 992px) {
   .header-top {
     padding: 0 2%;
@@ -163,8 +193,13 @@ html {
   .sezione_sotto_jumbotron .col-lg-5 {
     padding: 0px;
   }
+  .sezione_smart_phone_content h4 {
+    float: none;
+    margin-top: 40px;
+  }
 }
 
+/* visualizzazione con small display  */
 @media screen and (max-width: 768px) {
   .xs_display_block {
     display: block;
@@ -194,6 +229,6 @@ html {
     width: 100%;
     margin-left: 0;
   }
-.sezione_sotto_jumbotron .col-offset-lg-1 {
-  margin-top: calc((100% / 24) * 1.5);
+  .sezione_sotto_jumbotron .col-offset-lg-1 {
+    margin-top: calc((100% / 24) * 1.5);
 }
